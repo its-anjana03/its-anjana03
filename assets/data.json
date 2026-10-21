@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-21T05:09:00.997Z",
+  "fetchedAt": "2026-10-21T05:13:21.768Z",
   "user": {
     "repositories": {
       "nodes": [
@@ -14,12 +14,18 @@
           "description": "Seylune — luxury fashion frontend (HTML, CSS, JS). SLIIT IAD project, extended with product pages, search, filters, cart, checkout and wishlist.",
           "homepageUrl": "https://its-anjana03.github.io/seylune/",
           "url": "https://github.com/its-anjana03/seylune"
+        },
+        {
+          "name": "its-anjana03",
+          "description": "FORGE Studio · Thinura Anjana. Designer & front-end developer.",
+          "homepageUrl": "https://forgestudio.web.lk/",
+          "url": "https://github.com/its-anjana03/its-anjana03"
         }
       ]
     },
     "contributionsCollection": {
       "contributionCalendar": {
-        "totalContributions": 104,
+        "totalContributions": 106,
         "weeks": [
           {
             "contributionDays": [
@@ -1701,7 +1707,7 @@
               },
               {
                 "date": "2026-10-21",
-                "contributionCount": 0
+                "contributionCount": 2
               }
             ]
           }
