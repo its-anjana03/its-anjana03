@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="156" height="46" viewBox="0 0 156 46" role="img" aria-label="Behance">
+<style>
+  .s{font-family:'GS', 'General Sans', 'Segoe UI', -apple-system, BlinkMacSystemFont, system-ui, sans-serif} .m{font-family:ui-monospace, 'SF Mono', 'Cascadia Mono', Consolas, Menlo, monospace}
+  @keyframes up{from{opacity:0;transform:translateY(12px)}}
+  .up{animation:up .8s cubic-bezier(.22,1,.36,1) backwards}
+  @keyframes fade{from{opacity:0}}
+  .fade{animation:fade 1s ease-out backwards}
+  @keyframes gx{from{transform:scaleX(0)}}
+  .gx{transform-box:fill-box;transform-origin:0 50%;animation:gx 1.4s cubic-bezier(.22,1,.36,1) backwards}
+  @keyframes gy{from{transform:scaleY(0)}}
+  .gy{transform-box:fill-box;transform-origin:50% 0;animation:gy 1.2s cubic-bezier(.65,0,.35,1) backwards}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.45}}
+  .pulse{animation:pulse 2.2s ease-in-out infinite}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<defs><filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<rect x="1" y="1" width="154" height="44" rx="23" fill="#121110" stroke="rgba(244,239,230,.22)"/>
+<circle cx="24" cy="23" r="3" fill="#FF8A00" filter="url(#glow)" class="pulse" style="animation-delay:0.4s"/>
+<text x="38" y="27.5" class="m" font-size="11.5" letter-spacing="2" fill="#F4EFE6">BEHANCE</text>
+<text x="134" y="28" text-anchor="end" class="s" font-size="14" fill="#FFC247">↗</text>
+</svg>

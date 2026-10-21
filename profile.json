@@ -1,0 +1,81 @@
+{
+  "login": "its-anjana03",
+  "name": "Thinura Anjana",
+  "kicker": "FORGE STUDIO · EST. 2019 · SRI LANKA",
+  "role": "Designer & front-end developer",
+  "disciplines": "UI/UX  ·  Front-end  ·  Brand identity  ·  Cinematic posters",
+  "study": "BBA (HONS) MIS · SLIIT",
+  "code": [
+    {
+      "repo": "seylune",
+      "title": "Seylune",
+      "kicker": "Luxury fashion storefront",
+      "description": "Luxury fashion frontend with product pages, search, filters, cart, checkout and wishlist. A SLIIT project, extended.",
+      "tags": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "repo": "forgestudio-portfolio",
+      "title": "FORGE Studio",
+      "kicker": "Portfolio site",
+      "description": "The studio site: cinematic case studies, a foundry archive of campaign work, and motion built with GSAP and Lenis.",
+      "tags": ["JavaScript", "GSAP", "Lenis"]
+    }
+  ],
+  "posters": [
+    {
+      "title": "Lantharuma 2027",
+      "meta": "2027 · 24 PIECES",
+      "role": "Event campaign design",
+      "image": "lantharuma-2027-poster-01.webp",
+      "alt": "Lantharuma 2027 poster: a masked figure holding a lantern before a full moon",
+      "url": "https://forgestudio.web.lk/foundry/#/events/lantharuma-2027"
+    },
+    {
+      "title": "Enchanté",
+      "meta": "2026 · 19 PIECES",
+      "role": "Full campaign, independently",
+      "image": "enchante-social-02.webp",
+      "alt": "Enchanté date reveal painted on an old fresco wall",
+      "url": "https://forgestudio.web.lk/foundry/#/events/enchante"
+    },
+    {
+      "title": "Down the Wicket",
+      "meta": "2026 · 24 PIECES",
+      "role": "Full campaign, independently",
+      "image": "down-the-wicket-social-21.webp",
+      "alt": "Down the Wicket 2026 poster: players and crew celebrating under falling confetti",
+      "url": "https://forgestudio.web.lk/foundry/#/events/down-the-wicket"
+    },
+    {
+      "title": "ADMELIORA'26",
+      "meta": "2026 · 12 PIECES",
+      "role": "Event campaign design",
+      "image": "admeliora-26-social-03.webp",
+      "alt": "ADMELIORA 26 title reveal: a panel on a lit stage",
+      "url": "https://forgestudio.web.lk/foundry/#/events/admeliora-26"
+    }
+  ],
+  "timeline": [
+    { "year": "2019", "title": "Taught myself design" },
+    { "year": "2020", "title": "First client work as Master Creations" },
+    { "year": "2021", "title": "Photoshop & Illustrator advanced course" },
+    { "year": "2022", "title": "1st of 200, Best Watch Design" },
+    { "year": "2022", "title": "Tribute piece aired on Thanthi TV" },
+    { "year": "2024", "title": "Started BBA (Hons) MIS at SLIIT" },
+    { "year": "2025", "title": "Master Creations becomes FORGE Studio" },
+    { "year": "2026", "title": "Co-Editor, SBSS Community" },
+    { "year": "2026", "title": "Marketing Executive, Jeewa Education" }
+  ],
+  "tools": [
+    { "group": "Design", "items": ["Photoshop", "Illustrator", "Figma"] },
+    { "group": "Build", "items": ["HTML", "CSS", "JavaScript", "GSAP", "Lenis"] },
+    { "group": "Ship", "items": ["Git", "GitHub", "GitHub Pages"] }
+  ],
+  "contact": [
+    { "label": "Portfolio", "url": "https://forgestudio.web.lk/" },
+    { "label": "Behance", "url": "https://www.behance.net/thinuraanjana3" },
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/thinura-anjana-7a4060306" },
+    { "label": "Instagram", "url": "https://www.instagram.com/its_anjana03/" },
+    { "label": "Email", "url": "mailto:anjanathinura07@gmail.com" }
+  ]
+}
