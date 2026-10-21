@@ -430,12 +430,84 @@ function footer() {
   return svg(W, H, { label: 'Made by hand, since 2019. FORGE Studio, Thinura Anjana.', body });
 }
 
+// ---------- manifesto.svg (intro: words struck hot, then cooling; hallmarks stamped in) ----------
+function manifesto() {
+  const W = 1000, m = cfg.manifesto;
+  const about = wrap(m.about, 104);
+  const H = 196 + about.length * 24 + 26;
+  let n = 0;
+  const words = m.quote.length;
+  const quote = m.quote.map((line, li) => {
+    const parts = line.split(' ').map((w, wi, arr) => {
+      const isLast = li === words - 1 && wi === arr.length - 1;
+      return `<tspan class="w" style="animation-delay:${r1(0.4 + n++ * 0.14)}s"${isLast ? ' fill="url(#hotWord)"' : ''}>${esc(w)}</tspan>`;
+    });
+    return `<text x="48" y="${112 + li * 44}" class="s" font-size="36" font-weight="600" letter-spacing="-.8" fill="${C.bone}">${parts.join(' ')}</text>`;
+  }).join('\n');
+  const after = r1(0.4 + n * 0.14);
+  let y = 52;
+  const marks = m.hallmarks.map((h, i) => {
+    const w = Math.round(h.length * 8.6 + 30);
+    const g = `<g transform="translate(${952 - w} ${y}) rotate(${[-2.5, 1.8, -1.2][i % 3]} ${w / 2} 15)">
+  <g class="stamp" style="animation-delay:${r1(after + 0.2 + i * 0.35)}s">
+    <rect width="${w}" height="30" rx="3" fill="${C.ink2}" stroke="${C.gold}" stroke-opacity=".55"/>
+    <rect x="3" y="3" width="${w - 6}" height="24" rx="2" fill="none" stroke="${C.gold}" stroke-opacity=".2"/>
+    <text x="${w / 2}" y="19.5" text-anchor="middle" class="m" font-size="11" letter-spacing="2" fill="${C.gold}">${esc(h)}</text>
+  </g></g>`;
+    y += 42;
+    return g;
+  }).join('\n');
+  const body = `<defs>${glow('glow', 3)}
+  <linearGradient id="hotWord" x1="0" x2="1">${heatStops(HEAT_STOPS.slice(0, 3))}</linearGradient>
+  <linearGradient id="rail" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE7A6"/><stop offset=".4" stop-color="${C.gold}"/><stop offset=".8" stop-color="${C.ember}"/><stop offset="1" stop-color="#7A3510" stop-opacity="0"/></linearGradient></defs>
+<rect x="1" y="1" width="${W - 2}" height="${H - 2}" rx="18" fill="${C.ink}" stroke="${C.line}"/>
+<rect x="24" y="36" width="3" height="${H - 72}" rx="1.5" fill="url(#rail)" filter="url(#glow)" class="gy" style="animation-duration:1.6s"/>
+<text x="48" y="56" class="m up" font-size="10.5" letter-spacing="2.4" fill="${C.mute}">01 / MANIFESTO</text>
+${quote}
+${marks}
+<g class="up" style="animation-delay:${r1(after + 0.3)}s">
+  <line x1="48" x2="952" y1="182" y2="182" stroke="${C.line}"/>
+  ${about.map((l, i) => `<text x="48" y="${214 + i * 24}" class="s" font-size="15.5" fill="${C.dim}">${esc(l)}</text>`).join('\n  ')}
+</g>`;
+  const css = `
+  @keyframes w{0%{opacity:0;fill:#FFE7A6}35%{opacity:1;fill:${C.gold}}}
+  .w{animation:w 1.6s ease-out backwards}
+  @keyframes stamp{0%{opacity:0;transform:scale(1.6)}55%{opacity:1;transform:scale(.94)}100%{transform:scale(1)}}
+  .stamp{transform-box:fill-box;transform-origin:center;animation:stamp .5s cubic-bezier(.3,1.4,.5,1) backwards}`;
+  return svg(W, H, { css, fonts: [400, 600], label: `${m.quote.join(' ')} ${m.about}`, body });
+}
+
+// ---------- section-N.svg (headings with a heat line) ----------
+function heading(title, i) {
+  const W = 1000, H = 64, hot = 190;
+  const body = `<defs>${glow('glow', 3)}
+  <linearGradient id="hl" x1="0" x2="1"><stop offset="0" stop-color="#7A3510"/><stop offset=".55" stop-color="${C.ember}"/><stop offset=".85" stop-color="${C.gold}"/><stop offset="1" stop-color="#FFE7A6"/></linearGradient>
+  <linearGradient id="sheen" x1="0" x2="1"><stop offset="0" stop-color="${C.gold}" stop-opacity="0"/><stop offset=".5" stop-color="${C.gold}" stop-opacity=".7"/><stop offset="1" stop-color="${C.gold}" stop-opacity="0"/></linearGradient>
+  <clipPath id="track"><rect x="${hot}" y="47" width="${W - 24 - hot}" height="3"/></clipPath></defs>
+<rect x="1" y="1" width="${W - 2}" height="${H - 2}" rx="14" fill="${C.ink}" stroke="${C.line}"/>
+<g class="up">
+  <text x="24" y="36" class="m" font-size="12" letter-spacing="2" fill="${C.gold}">${pad(i + 2)} /</text>
+  <text x="70" y="38" class="s" font-size="24" font-weight="600" letter-spacing="-.4" fill="${C.bone}">${esc(title)}</text>
+</g>
+<line x1="24" x2="${W - 24}" y1="48.5" y2="48.5" stroke="${C.line}"/>
+<rect x="24" y="47" width="${hot - 24}" height="3" rx="1.5" fill="url(#hl)" filter="url(#glow)" class="gx" style="animation-delay:.2s"/>
+<g class="fade" style="animation-delay:1.3s"><circle cx="${hot}" cy="48.5" r="3.5" fill="#FFE7A6" filter="url(#glow)" class="pulse"/></g>
+<g clip-path="url(#track)"><rect x="${hot - 90}" y="47" width="90" height="3" fill="url(#sheen)" class="run" style="animation-delay:${r1(2 + i * 0.8)}s"/></g>`;
+  const css = `
+  @keyframes run{0%{transform:translateX(0)}45%,100%{transform:translateX(${W - hot + 70}px)}}
+  .run{animation:run 7s ease-in-out infinite backwards}`;
+  return svg(W, H, { css, fonts: [600], label: title, body });
+}
+
 // ---------- write ----------
+await writeFile(path.join(OUT, 'manifesto.svg'), manifesto());
+for (const [i, t] of cfg.sections.entries()) await writeFile(path.join(OUT, `section-${i + 1}.svg`), heading(t, i));
 await writeFile(path.join(OUT, 'forge.svg'), hero());
 for (const [i, p] of cfg.code.entries()) await writeFile(path.join(OUT, `code-${i + 1}.svg`), codeCard(p, i));
 for (const [i, p] of cfg.posters.entries()) await writeFile(path.join(OUT, `poster-${i + 1}.svg`), await posterCard(p, i));
 await writeFile(path.join(OUT, 'timeline.svg'), timeline());
 await writeFile(path.join(OUT, 'anvil.svg'), anvil());
 for (const [i, c] of cfg.contact.entries()) await writeFile(path.join(OUT, `link-${c.label.toLowerCase()}.svg`), button(c, i));
+await writeFile(path.join(OUT, 'link-all-work.svg'), button({ label: 'All work' }, 0));
 await writeFile(path.join(OUT, 'footer.svg'), footer());
 console.log(`Forged with data from ${fetchedAt}: heat ${heat.toFixed(2)} → ${temp}°C (${state}), ${week} contributions this week.`);

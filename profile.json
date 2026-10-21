@@ -5,12 +5,18 @@
   "role": "Designer & front-end developer",
   "disciplines": "UI/UX  ·  Front-end  ·  Brand identity  ·  Cinematic posters",
   "study": "BBA (HONS) MIS · SLIIT",
+  "manifesto": {
+    "quote": ["I design as if every frame", "could be paused."],
+    "about": "I run FORGE Studio, a one-person design practice in Sri Lanka: cinematic posters, brand identity, campaigns and UI/UX, made by hand since 2019. I also build what I design in HTML, CSS and JavaScript, and I'm studying BBA (Hons) MIS at SLIIT.",
+    "hallmarks": ["EST. 2019", "1ST OF 200", "AIRED ON THANTHI TV"]
+  },
+  "sections": ["Forged in code", "Out of the foundry", "Forged since 2019", "On the anvil", "Let's forge something"],
   "code": [
     {
       "repo": "seylune",
       "title": "Seylune",
       "kicker": "Luxury fashion storefront",
-      "description": "Luxury fashion frontend with product pages, search, filters, cart, checkout and wishlist. A SLIIT project, extended.",
+      "description": "Product pages, search, filters, cart, checkout and wishlist. Extended from a SLIIT IAD project.",
       "tags": ["HTML", "CSS", "JavaScript"]
     },
     {
