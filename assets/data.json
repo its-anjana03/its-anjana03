@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-21T19:33:48.650Z",
+  "fetchedAt": "2026-11-22T07:09:47.420Z",
   "user": {
     "repositories": {
       "nodes": [
@@ -33,38 +33,6 @@
       "contributionCalendar": {
         "totalContributions": 122,
         "weeks": [
-          {
-            "contributionDays": [
-              {
-                "date": "2025-11-16",
-                "contributionCount": 0
-              },
-              {
-                "date": "2025-11-17",
-                "contributionCount": 0
-              },
-              {
-                "date": "2025-11-18",
-                "contributionCount": 0
-              },
-              {
-                "date": "2025-11-19",
-                "contributionCount": 0
-              },
-              {
-                "date": "2025-11-20",
-                "contributionCount": 0
-              },
-              {
-                "date": "2025-11-21",
-                "contributionCount": 0
-              },
-              {
-                "date": "2025-11-22",
-                "contributionCount": 0
-              }
-            ]
-          },
           {
             "contributionDays": [
               {
@@ -1725,6 +1693,14 @@
               },
               {
                 "date": "2026-11-21",
+                "contributionCount": 0
+              }
+            ]
+          },
+          {
+            "contributionDays": [
+              {
+                "date": "2026-11-22",
                 "contributionCount": 0
               }
             ]
