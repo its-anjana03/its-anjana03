@@ -36,7 +36,7 @@
   <linearGradient id="nameHeat" x1="0" x2="1"><stop offset="0" stop-color="#FFE7A6"/><stop offset="0.32" stop-color="#FFC247"/><stop offset="0.62" stop-color="#FF8A00"/><stop offset="0.86" stop-color="#7A3510"/></linearGradient>
   <linearGradient id="bar" gradientUnits="userSpaceOnUse" x1="380" x2="960">
     <stop offset="0" stop-color="#5C1A0B"/><stop offset=".35" stop-color="#B8410F"/><stop offset=".6" stop-color="#FF8A00"/><stop offset=".82" stop-color="#FFC247"/><stop offset="1" stop-color="#FFE7A6"/></linearGradient>
-  <radialGradient id="bed" cx="50%" cy="100%" r="70%"><stop offset="0" stop-color="#641d0b" stop-opacity=".9"/><stop offset=".5" stop-color="#641d0b" stop-opacity=".18"/><stop offset="1" stop-color="#641d0b" stop-opacity="0"/></radialGradient>
+  <radialGradient id="bed" cx="50%" cy="100%" r="70%"><stop offset="0" stop-color="#631d0b" stop-opacity=".9"/><stop offset=".5" stop-color="#631d0b" stop-opacity=".18"/><stop offset="1" stop-color="#631d0b" stop-opacity="0"/></radialGradient>
   <clipPath id="frame"><rect x="1" y="1" width="998" height="458" rx="18"/></clipPath>
 </defs>
 <rect x="1" y="1" width="998" height="458" rx="18" fill="#0A0908"/>
@@ -66,24 +66,24 @@
   <circle cx="145" cy="444.7" r="1.3" fill="#FF8A00" opacity="0" class="ember" style="--dx:-25.1px;--rise:389.9px;--o:0.5;animation-duration:6.6s;animation-delay:-2s"/>
 </g>
 <g transform="translate(60 118) scale(0.08842)">
-  <path d="M2962,267L2499,0L1038,392L771,854L1234,1121L504,1317L0,2190L516,2488L1162,2314L1430,1851L2160,1656L2427,1193L1964,925L2695,729Z" fill="#641d0b" filter="url(#halo)" class="flick" style="--o:0.3;animation-delay:1.6s" opacity="0.3"/>
+  <path d="M2962,267L2499,0L1038,392L771,854L1234,1121L504,1317L0,2190L516,2488L1162,2314L1430,1851L2160,1656L2427,1193L1964,925L2695,729Z" fill="#631d0b" filter="url(#halo)" class="flick" style="--o:0.3;animation-delay:1.6s" opacity="0.3"/>
   <path d="M2962,267L2499,0L1038,392L771,854L1234,1121L504,1317L0,2190L516,2488L1162,2314L1430,1851L2160,1656L2427,1193L1964,925L2695,729Z" fill="#2B2B2B"/>
   <path d="M2962,267L2499,0L1038,392L771,854L1234,1121L504,1317L0,2190L516,2488L1162,2314L1430,1851L2160,1656L2427,1193L1964,925L2695,729Z" fill="url(#heat)" class="heatup"/>
 </g>
 <circle cx="191" cy="228" r="26" fill="#FFF4D6" opacity="0" filter="url(#glowBig)" class="flash" style="animation-delay:1.8s"/>
 <circle cx="191" cy="228" r="30" fill="none" stroke="#FFC247" stroke-width="2" opacity="0" class="wave" style="animation-delay:1.8s"/>
 <g transform="translate(191 228)" filter="url(#glow)">
-  <g class="spark" opacity="0" style="--dx:27.5px;--dy:-36px;animation-delay:1.9s"><line x2="10.6" stroke="#FFC247" stroke-width="1.6" stroke-linecap="round" transform="rotate(307.3)"/></g>
-  <g class="spark" opacity="0" style="--dx:-44.7px;--dy:91.4px;animation-delay:1.9s"><line x2="6.4" stroke="#FFC247" stroke-width="1.6" stroke-linecap="round" transform="rotate(116)"/></g>
-  <g class="spark" opacity="0" style="--dx:-65.1px;--dy:56.1px;animation-delay:1.9s"><line x2="13.4" stroke="#FF8A00" stroke-width="1.6" stroke-linecap="round" transform="rotate(139.2)"/></g>
-  <g class="spark" opacity="0" style="--dx:-7.7px;--dy:-94.4px;animation-delay:1.9s"><line x2="7" stroke="#FFC247" stroke-width="1.6" stroke-linecap="round" transform="rotate(265.4)"/></g>
-  <g class="spark" opacity="0" style="--dx:-82.6px;--dy:11.6px;animation-delay:1.8s"><line x2="6.8" stroke="#FFC247" stroke-width="1.6" stroke-linecap="round" transform="rotate(172)"/></g>
-  <g class="spark" opacity="0" style="--dx:42.2px;--dy:73.1px;animation-delay:1.8s"><line x2="14" stroke="#FF8A00" stroke-width="1.6" stroke-linecap="round" transform="rotate(60)"/></g>
-  <g class="spark" opacity="0" style="--dx:-13.3px;--dy:42.8px;animation-delay:1.9s"><line x2="9" stroke="#FFC247" stroke-width="1.6" stroke-linecap="round" transform="rotate(107.2)"/></g>
-  <g class="spark" opacity="0" style="--dx:-4.4px;--dy:-101px;animation-delay:1.8s"><line x2="10.9" stroke="#FFC247" stroke-width="1.6" stroke-linecap="round" transform="rotate(267.5)"/></g>
-  <g class="spark" opacity="0" style="--dx:21.1px;--dy:44.4px;animation-delay:1.8s"><line x2="7.3" stroke="#FFC247" stroke-width="1.6" stroke-linecap="round" transform="rotate(64.5)"/></g>
-  <g class="spark" opacity="0" style="--dx:-35.4px;--dy:-53.4px;animation-delay:1.8s"><line x2="6.3" stroke="#FF8A00" stroke-width="1.6" stroke-linecap="round" transform="rotate(236.4)"/></g>
-  <g class="spark" opacity="0" style="--dx:-24.4px;--dy:72.9px;animation-delay:1.8s"><line x2="15.6" stroke="#FF8A00" stroke-width="1.6" stroke-linecap="round" transform="rotate(108.5)"/></g>
+  <g class="spark" opacity="0" style="--dx:27.4px;--dy:-35.9px;animation-delay:1.9s"><line x2="10.6" stroke="#FFC247" stroke-width="1.6" stroke-linecap="round" transform="rotate(307.3)"/></g>
+  <g class="spark" opacity="0" style="--dx:-44.5px;--dy:91px;animation-delay:1.9s"><line x2="6.4" stroke="#FFC247" stroke-width="1.6" stroke-linecap="round" transform="rotate(116)"/></g>
+  <g class="spark" opacity="0" style="--dx:-64.8px;--dy:55.9px;animation-delay:1.9s"><line x2="13.4" stroke="#FF8A00" stroke-width="1.6" stroke-linecap="round" transform="rotate(139.2)"/></g>
+  <g class="spark" opacity="0" style="--dx:-7.6px;--dy:-94px;animation-delay:1.9s"><line x2="7" stroke="#FFC247" stroke-width="1.6" stroke-linecap="round" transform="rotate(265.4)"/></g>
+  <g class="spark" opacity="0" style="--dx:-82.2px;--dy:11.5px;animation-delay:1.8s"><line x2="6.8" stroke="#FFC247" stroke-width="1.6" stroke-linecap="round" transform="rotate(172)"/></g>
+  <g class="spark" opacity="0" style="--dx:42px;--dy:72.8px;animation-delay:1.8s"><line x2="14" stroke="#FF8A00" stroke-width="1.6" stroke-linecap="round" transform="rotate(60)"/></g>
+  <g class="spark" opacity="0" style="--dx:-13.2px;--dy:42.6px;animation-delay:1.9s"><line x2="9" stroke="#FFC247" stroke-width="1.6" stroke-linecap="round" transform="rotate(107.2)"/></g>
+  <g class="spark" opacity="0" style="--dx:-4.4px;--dy:-100.6px;animation-delay:1.8s"><line x2="10.9" stroke="#FFC247" stroke-width="1.6" stroke-linecap="round" transform="rotate(267.5)"/></g>
+  <g class="spark" opacity="0" style="--dx:21px;--dy:44.2px;animation-delay:1.8s"><line x2="7.3" stroke="#FFC247" stroke-width="1.6" stroke-linecap="round" transform="rotate(64.5)"/></g>
+  <g class="spark" opacity="0" style="--dx:-35.3px;--dy:-53.2px;animation-delay:1.8s"><line x2="6.3" stroke="#FF8A00" stroke-width="1.6" stroke-linecap="round" transform="rotate(236.4)"/></g>
+  <g class="spark" opacity="0" style="--dx:-24.2px;--dy:72.6px;animation-delay:1.8s"><line x2="15.6" stroke="#FF8A00" stroke-width="1.6" stroke-linecap="round" transform="rotate(108.5)"/></g>
 </g>
 <g class="up" style="animation-delay:.2s">
   <text x="380" y="148" class="m" font-size="11" letter-spacing="3" fill="#8A8378">FORGE STUDIO · EST. 2019 · SRI LANKA</text>
@@ -99,16 +99,16 @@
 </g>
 <g class="up" style="animation-delay:1s">
   <text x="380" y="362" class="m" font-size="10.5" letter-spacing="2.4" fill="#8A8378">FORGE TEMPERATURE · LAST 21 DAYS</text>
-  <text x="960" y="362" text-anchor="end" class="m" font-size="10.5" letter-spacing="2.4" fill="#641d0b">EMBERS</text>
+  <text x="960" y="362" text-anchor="end" class="m" font-size="10.5" letter-spacing="2.4" fill="#631d0b">EMBERS</text>
   <rect x="380" y="374" width="580" height="6" rx="3" fill="#2B2B2B"/>
 </g>
 <rect x="380" y="374" width="29" height="6" rx="3" fill="url(#bar)" filter="url(#glow)" class="gx" style="animation-delay:1.3s"/>
-<g class="fade" style="animation-delay:2.4s"><circle cx="409" cy="377" r="4.5" fill="#641d0b" filter="url(#glowBig)" class="pulse"/></g>
+<g class="fade" style="animation-delay:2.4s"><circle cx="409" cy="377" r="4.5" fill="#631d0b" filter="url(#glowBig)" class="pulse"/></g>
 <g class="up" style="animation-delay:1.5s">
   <text x="380" y="424" class="m" font-size="11" letter-spacing="2.4" fill="#8A8378">IGNITE</text>
-  <text x="440" y="425" class="s" font-size="28" font-weight="600" fill="#F4EFE6">520<tspan fill="#641d0b">°C</tspan></text>
+  <text x="440" y="425" class="s" font-size="28" font-weight="600" fill="#F4EFE6">520<tspan fill="#631d0b">°C</tspan></text>
   <text x="960" y="413" text-anchor="end" class="m" font-size="10.5" fill="#A8A196">0 contributions this week</text>
-  <text x="960" y="430" text-anchor="end" class="m" font-size="10.5" fill="#8A8378">stoked 25 Nov, 04:08 Colombo</text>
+  <text x="960" y="430" text-anchor="end" class="m" font-size="10.5" fill="#8A8378">stoked 25 Nov, 14:24 Colombo</text>
 </g>
 <rect x="1" y="1" width="998" height="458" rx="18" fill="none" stroke="rgba(244,239,230,.12)"/>
 </svg>
